@@ -1,0 +1,25 @@
+1|Emil Theodor Kocher|Alemanha. Reconhecido pelos seus trabalhos sobre a fisiologia, patologia e cirurgia da tireóide.
+2|Albrecht Kossel|Alemanha. Reconhecido por suas investigações em biologia celular, especialmente proteínas e ácidos nucleicos.
+3|Allvar Gullstrand|Suécia. Reconhecido pelo seu trabalho sobre dioptrias do olho.
+4|Alexis Carrel|França. Reconhecido por seus trabalhos sobre sutura vascular e transplante de vasos sanguíneos e órgãos.
+5|Charles Robert Richet|França. Reconhecido por descobrir a anafilaxia.
+6|Robert Bárány|Áustria-Hungria. Reconhecido por suas investigações sobre o aparelho vestibular no ouvido interno.
+7|Jules Bordet|Bélgica. Reconhecido pela descoberta do sistema de complemento.
+8|Archibald Vivian Hill|Reino Unido. Reconhecido por suas descobertas sobre a produção de calor pelos músculos.
+9|Willem Einthoven|Países Baixos. Reconhecido pela invenção do eletrocardiograma.
+10|Karl Landsteiner|Áustria. Reconhecido pela descoberta dos grupos sanguíneos.
+11|Otto Heinrich Warburg|Alemanha. Reconhecido por investigações sobre o citocromo na respiração celular.
+12|Thomas Hunt Morgan|Estados Unidos. Reconhecido por suas descobertas sobre a função dos cromossomos na hereditariedade.
+13|Robert Koch|Alemanha. Reconhecido pela descoberta da causa da tuberculose.
+14|Hermann Muller|Estados Unidos. Reconhecido por estudos sobre a ação dos raios X como produtores de mutações e a ação das radiações sobre as células.
+15|Alexander Fleming|Escócia. Reconhecido pela descoberta da penicilina e seus efeitos curativos em várias doenças infecciosas.
+16|Hans Spemann|Alemanha. Reconhecido pela descoberta do efeito organizador no desenvolvimento embrionário.
+17|Albert Szent-Györgyi|Hungria. Reconhecido por descobrir a vitamina C como catalisador.
+18|Niels Ryberg Finsen|Dinamarca. Reconhecido pelo emprego da luz no tratamento do lupus vulgaris.
+19|Gerhard Domagk|Alemanha. Reconhecido por descobrir efeitos antibacterianos de certas drogas sulfonamidas, atualmente utilizadas para tratar hanseníase.
+20|Bernardo Houssay|Argentina. Reconhecido por pesquisar sobre hormônios secretados pela glândula hipófise.
+21|Selman Waksman|Estados Unidos. Reconhecido pela descoberta do antibiótico estreptomicina.
+22|Hans Krebs|Reino Unido. Reconhecido pela descrição do Ciclo de Krebs.
+23|Daniel Bovet|Itália. Reconhecido por ter sintetizado o primeiro anti-histamínico clinicamente disponível.
+24|Georg von Békésy|Estados Unidos. Reconhecido por suas descobertas do mecanismo da estimulação da cóclea.
+25|Barbara McClintock|Estados Unidos. Reconhecida pelo seu trabalho com os transpósons.
