@@ -460,13 +460,13 @@ while True:
     ############## Running current page ###########################
 
     if page == "album":
-        #try:
+        try:
             main_page()
-        #except:
-            #pass
+        except:
+            pass
 
     if page == "newsstand":
-        #try:
+        try:
             page_banca()
             if confirmed and correct_selected:
                 hit = True
@@ -517,8 +517,8 @@ while True:
                           (790, 200),
                           fnt(18),
                           game_display)
-        #except:
-           # pass
+        except:
+            pass
         
     pygame.display.update()
 ############### Close pygame ###################
