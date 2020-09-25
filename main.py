@@ -2,10 +2,16 @@
 
 import pygame, random, os
 from functions import *
+from time import sleep
 
 #=========Get pygame started===========
 pygame.init()
 root = os.getcwd() #Set root path
+
+#========= Starting mixer =============
+pygame.mixer.init()
+pygame.mixer.music.load(root + '/Resources/Songs/The Stork.mp3')
+pygame.mixer.music.play(-1)
 
 ########### Loading elements ##############
 
@@ -16,7 +22,7 @@ questions = load_questions()
 #============Load stickers=================
 cmp = load_components()
 os.chdir('../Stickers')
-figs = [pygame.image.load(str(i+1)+'.png') for i in range(len(descriptions))]
+figs = [pygame.image.load(str(i + 1)+'.png') for i in range(len(descriptions))]
 os.chdir(root)
 
 ############# Declaring variables ###################
@@ -95,7 +101,11 @@ def save_or_load(option='save'):
         selected             =     int(l[11])
         misses               =     int(l[12])
 
-save_or_load('load')               
+try:
+    save_or_load('load')               
+except:
+    pass
+
 
 ############# Window-related variables ##############
 
@@ -160,9 +170,14 @@ def main_page():
             cmp['pacotinho'],
             (31, 552)
             )
-    
+
     ############# Events regarding which component was clicked ##########
 
+    #------ Wait a little ------
+    if which_element(0)[1]:
+        sleep(0.09)
+    #---------------------------
+        
     if which_element(0) == ('fig_dir', True) and \
        new_sticker_position < len(new_stickers) - 1:
             new_sticker_position += 1
@@ -273,17 +288,18 @@ def main_page():
                     (532, 224)
                     )
 
-                screen_text=fnt(25).render(
+                screen_text = fnt(25).render(
                     description[1], True, black
                     )
 
                 text_rect = screen_text.get_rect()
-                text_rect.center = 600, 500
+                text_rect.center = 600, 510
                 game_display.blit(screen_text, text_rect)
+
                 blit_text(description[2],
                           (815, 754),
-                          (408, 521),
-                          fnt(25),
+                          (408, 525),
+                          fnt(20),
                           game_display)
     
     ######### Change to newsstand if user clicks "album" button #########
@@ -357,7 +373,7 @@ def page_banca():
     blit_text(questions[n_sort][0],
               (690, 188),
               (67, 51),
-              fnt(25),
+              fnt(20),
               game_display)
 
     ################# Blits the alternatives of the question ############
@@ -420,7 +436,7 @@ while True:
                    
         if event.type == pygame.MOUSEMOTION:
             cicles += 1
-            if cicles >= 300:
+            if cicles >= 150:
                 hit = False
                 missed = False
                 clicked_trade = False
@@ -452,7 +468,7 @@ while True:
     if page == "newsstand":
         #try:
             page_banca()
-            if correct_selected and confirmed:
+            if confirmed and correct_selected:
                 hit = True
 
             if confirmed and not correct_selected:
@@ -467,7 +483,7 @@ while True:
                 blit_text('Parabéns! Você ganhou um pacotinho!',
                           (790 + 126, 200 + 122),
                           (790, 200),
-                          fnt(18),
+                          fnt(17),
                           game_display)
 
             ############### balloon when the user misses ###############
@@ -487,7 +503,7 @@ while True:
                     blit_text('Você errou duas vezes! Perdeu um pacotinho...',
                               (790 + 120, 200 + 122),
                               (790, 200),
-                              fnt(18),
+                              fnt(17),
                               game_display)
 
             ############### balloon when the user clicks "Trade" ############

@@ -142,6 +142,24 @@ def position_map():
 
 ##########################################################
 
+def wait(func):
+
+    '''Reduces clicks sensibility'''
+    
+    global count
+    count = 0
+    
+    def wrapper(*args, **kwargs):
+        global count
+        if count < 2:
+            count += 1
+        else:
+            count = 0
+            return func(*args, **kwargs)
+
+    return wrapper
+    
+#@wait
 def which_element(page):
 
     '''Returns the element where the cursor is over and if
